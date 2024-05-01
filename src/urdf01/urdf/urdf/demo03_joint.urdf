@@ -1,0 +1,55 @@
+<robot name="my_car">
+<link name="base_link">
+    <visual name="">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <box size="0.5 0.5 0.5"/>
+            <mesh filename="package://urdf01/meshes/"/>
+        </geometry>
+        <material name="">
+            <color rgba="1.0 0.0 0.0 0.5"/>
+            <texture filename=""/>
+        </material>
+    </visual>
+    <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <box size="0.0 0.0 0.0"/>
+        </geometry>
+    </collision>
+
+</link>
+
+<link name="camera">
+    <inertial>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <mass value="0.0"/>
+        <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <visual name="">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <box size="0.2 0.2 0.2"/>
+        </geometry>
+        <material name="camera_color">
+            <color rgba="0.0 0.0 1.0 0.5"/>
+            <texture filename=""/>
+        </material>
+    </visual>
+    <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <box size="0.0 0.0 0.0"/>
+        </geometry>
+    </collision>
+</link>
+
+<joint name="camera_to_base" type="continuous">
+    <origin xyz="0.15 0.0 0.35" rpy="0.0 0.0 0.0"/>
+    <parent link="base_link"/>
+    <child link="camera"/>
+    <axis xyz="0.0 0.0 1"/>
+    <limit lower="0.0" upper="0.0" effort="0.0" velocity="0.0"/>
+</joint>
+
+</robot>

@@ -1,0 +1,8 @@
+prefix=/home/tianbot/robot_sim_SW/devel
+
+Name: urdf01
+Description: Description of urdf01
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

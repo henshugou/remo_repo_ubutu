@@ -1,0 +1,19 @@
+<!-- 组合小车底盘与摄像头与雷达 -->
+<robot name="my_car_camera" xmlns:xacro="http://wiki.ros.org/xacro">
+<!--转动惯量参数文件-->
+    <xacro:include filename="head.xacro" />
+    <!--添加小车的底座摄像头和雷达-->
+    <xacro:include filename="mycar_base.xacro" />
+    <xacro:include filename="mycar_ladar.xacro" />
+    <xacro:include filename="mycar_camera.xacro" />
+
+    <!--运动控制文件配置-->
+     <xacro:include filename="gazebo_car_move.xacro" />
+      <!--雷达文件配置-->
+      <xacro:include filename="gazebo_car_laser.xacro" />
+      <!--摄像头文件配置-->
+      <xacro:include filename="gazebo_car_camera.xacro" />
+     <!--深度摄像头文件配置-->
+      <xacro:include filename="gazebo_car_kinect.xacro" />
+
+</robot>
