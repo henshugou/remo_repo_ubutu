@@ -1,0 +1,11 @@
+# Build files
+build/
+devel/
+.vscode/
+
+# ROS generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+#
