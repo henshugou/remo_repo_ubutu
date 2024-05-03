@@ -1,0 +1,15 @@
+
+<launch>
+    <!-- 在 rviz中显示机器人模型 -->
+    <!-- 将点云显示调整为正确的方向 -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="static_transform_publisher"
+        args="0 0 0 -1.57 0 -1.57 /support /support_depth" />
+    <!-- 启动rviz -->
+    <node pkg="rviz" type="rviz" name="rviz"
+        args="-d $(find navigation_demo)/config/location_rviz.rviz" />
+    <!--args传入rviz用户设置文件-->
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher"
+        output="screen" />
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"
+        output="screen" />
+</launch>

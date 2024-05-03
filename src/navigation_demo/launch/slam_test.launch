@@ -1,0 +1,7 @@
+
+<launch>
+    <include file="$(find navigation_demo)/launch/slam.launch" />
+    <include file="$(find navigation_demo)/launch/gazebo.launch" />
+    <include file="$(find navigation_demo)/launch/rviz.launch" />
+    <include file="$(find navigation_demo)/launch/keyboard_control.launch" />
+</launch>

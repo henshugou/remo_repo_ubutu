@@ -1,0 +1,11 @@
+<launch>
+    <include file="$(find navigation_demo)/launch/rviz.launch" />
+    <include file="$(find navigation_demo)/launch/map_server.launch" />
+    <include file="$(find navigation_demo)/launch/location.launch" />
+
+    <include file="$(find navigation_demo)/launch/gazebo.launch" />
+    <include file="$(find navigation_demo)/launch/keyboard_control.launch" />
+ 
+
+
+</launch>

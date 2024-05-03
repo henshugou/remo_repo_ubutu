@@ -1,0 +1,15 @@
+<launch>
+    <!-- 运行地图服务器，并且加载设置的地图-->
+    <include file="$(find navigation_demo)/launch/rviz.launch" />
+    <!-- 运行地图服务器，并且加载设置的地图-->
+    <include file="$(find navigation_demo)/launch/map_server.launch" />
+    <!-- 运行地图服务器，并且加载设置的地图-->
+    <include file="$(find navigation_demo)/launch/location.launch" />
+    <!-- 运行move_base节点 -->
+    <include file="$(find navigation_demo)/launch/planner_movebase.launch" />
+    <!-- 运行gazebo-->
+    <include file="$(find navigation_demo)/launch/gazebo.launch" />
+
+</launch>
+
+
