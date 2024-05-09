@@ -2,4 +2,4 @@
 source_root_dir = '/home/tianbot/robot_sim_SW/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/tianbot/robot_sim_SW/devel;/home/tianbot/study_ws/devel;/home/tianbot/manipulation_ws/devel;/home/tianbot/tianbot_mini_ws/devel;/home/tianbot/tianbot_ws/devel;/home/tianbot/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/tianbot/robot_sim_SW/devel;/home/tianbot/study_ws/devel;/home/tianbot/manipulation_ws/devel;/home/tianbot/tianbot_mini_ws/devel;/home/tianbot/tianbot_ws/devel;/home/tianbot/catkin_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/tianbot/study_ws/devel;/home/tianbot/manipulation_ws/devel;/home/tianbot/tianbot_mini_ws/devel;/home/tianbot/tianbot_ws/devel;/home/tianbot/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/tianbot/study_ws/devel;/home/tianbot/manipulation_ws/devel;/home/tianbot/tianbot_mini_ws/devel;/home/tianbot/tianbot_ws/devel;/home/tianbot/catkin_ws/devel;/opt/ros/noetic' != '' else []

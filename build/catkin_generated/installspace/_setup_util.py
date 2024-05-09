@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = r'/home/tianbot/robot_sim_SW/devel;/home/tianbot/study_ws/devel;/home/tianbot/manipulation_ws/devel;/home/tianbot/tianbot_mini_ws/devel;/home/tianbot/tianbot_ws/devel;/home/tianbot/catkin_ws/devel;/opt/ros/noetic'.split(';')
+            CMAKE_PREFIX_PATH = r'/home/tianbot/study_ws/devel;/home/tianbot/manipulation_ws/devel;/home/tianbot/tianbot_mini_ws/devel;/home/tianbot/tianbot_ws/devel;/home/tianbot/catkin_ws/devel;/opt/ros/noetic'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []

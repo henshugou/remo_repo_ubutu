@@ -1,2 +1,2 @@
 mygazebo:navigation_demo:urdf01
--DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/tianbot/robot_sim_SW/devel -DCMAKE_INSTALL_PREFIX=/home/tianbot/robot_sim_SW/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/tianbot/robot_sim_SW/devel -DCMAKE_INSTALL_PREFIX=/home/tianbot/robot_sim_SW/install -G Unix Makefiles
