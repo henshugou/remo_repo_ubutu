@@ -5,7 +5,7 @@
     <!-- 启动rviz-->
     <include file="$(find navigation_demo)/launch/rviz.launch" />
     <!-- 启动slam-->
-    <include file="$(find navigation_demo)/launch/sla`m.launch" />
+    <include file="$(find navigation_demo)/launch/slam.launch" />
     <!-- 运行move_base节点 -->
     <include file="$(find navigation_demo)/launch/movebase.launch" />
 </launch>
